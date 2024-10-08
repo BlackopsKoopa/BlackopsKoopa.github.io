@@ -1,12 +1,12 @@
 
 h1{
   color: white;
-  font-family:'plaza-pixel-c-s3-k-title-card';
+  font-family:'plaza-pixel-c-s3-k-title-card.ttf';
 }
 
 body{
   color: white;
   text-align:center;
   background-image:url("https://blackopskoopa.neocities.org/sonkickbg.png");
-  font-family:'srb2-fill';
+  font-family:'srb2-fill.ttf';
 }
