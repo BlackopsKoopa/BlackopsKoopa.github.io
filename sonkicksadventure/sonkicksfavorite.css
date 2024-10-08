@@ -1,12 +1,23 @@
+@font-face {
+                font-family: Plaza;
+                src: url('plaza-pixel-c-s3-k-title-card.ttf');
+            }
 
+            @font-face {
+                font-family: SRB2;
+                src: url('srb2-fill.ttf');
+                font-weight: bold;
+            }
+
+           
 h1{
   color: white;
-  font-family:'plaza-pixel-c-s3-k-title-card.ttf';
+  font-family:'Plaza';
 }
 
 body{
   color: white;
   text-align:center;
   background-image:url("https://blackopskoopa.neocities.org/sonkickbg.png");
-  font-family:'srb2-fill.ttf';
+  font-family:'SRB2';
 }
