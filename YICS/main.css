@@ -1,11 +1,16 @@
 @font-face {
     font-family: wayoshi;
-    src: url('/YICS/assets/font/wayoshi.ttf') format('truetype');
+    src: url('https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/2399ad6044bac8bccdfe1efbf990b41d1673795a/YICS/assets/font/wayoshi.ttf') format('truetype');
 	font-style: normal;
 	font-display: swap; 
 	font-weight: normal;
 }
 
+
 body {
+	background-color: blueviolet;
 	text-align: center;
+}
+footer{
+	background-color: gray;
 }
