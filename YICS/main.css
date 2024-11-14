@@ -1,7 +1,9 @@
 @font-face {
     font-family: wayoshi;
-    src: url(wayoshi.ttf);
-	
+    src: url('/YICS/assets/font/wayoshi.ttf') format('truetype');
+	font-style: normal;
+	font-display: swap; 
+	font-weight: normal;
 }
 
 main {
