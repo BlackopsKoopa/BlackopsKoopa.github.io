@@ -11,6 +11,9 @@ main {
 	background-color: blueviolet;
 	text-align: center;
 }
+body {
+	font-family: wayoshi;
+}
 footer{
 	background-color: gray;
 }
