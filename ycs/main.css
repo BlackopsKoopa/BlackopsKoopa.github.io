@@ -19,3 +19,8 @@ h1 {
 footer{
 	background-color: gray;
 }
+
+contain{
+	background-color: black;
+	text-color: white;
+	border: solid;
