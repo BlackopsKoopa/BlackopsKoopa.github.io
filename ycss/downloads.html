@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoshi's Cosmic Star Story</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="https://blackopskoopa.neocities.org/back/main.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+   <div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small">Downloads</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small">FAQ</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Downloads</a>
+  <a href="#" class="w3-bar-item w3-button">FAQ</a>
+  <a href="#" class="w3-bar-item w3-button">Contact</a>
+</div>
+   <div class="logo"><img src="https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/main/ycss/assets/logo.png?raw=true" width="316" height="150"></img></div>
+    <div id="maincontain" class="w3-round-large">
+      <h1>Downloads</h1>
+      <p>The game has no demo yet! check back at a later date. look at the discord server below if you wanna see how development has been going.</p>
+    </div>
+    
+
+
+   <footer>
+    talking about on how this is freeware and not sold for monetary gain mumbo jumbo
+    <div id="lookieheres">
+      <p><a href="https://discord.gg/phth2Ja87T">the cosmic star resort</a></p>
+    </div>
+   </footer>
+    <script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+  </body>
+
+</html>
