@@ -1,3 +1,6 @@
+.toptain{
+  background color: black;
+}
 body{
 background: rgb(0,255,0);
 background: linear-gradient(0deg, rgba(0,255,0,1) 0%, rgba(255,0,0,1) 0%, rgba(107,0,0,1) 100%);
