@@ -1,8 +1,8 @@
 .toptain{
-  
   text-align: center;
   background-image: linear-gradient(45deg, #262626 25%, #595959 25%, #595959 50%, #262626 50%, #262626 75%, #595959 75%, #595959 100%);
 background-size: 56.57px 56.57px;
+clip-path: polygon(0 0, 5% 0, 10% 100%, 15% 0, 20% 100%)
 }
 body{
 background: rgb(0,255,0);
