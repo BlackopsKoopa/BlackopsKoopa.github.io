@@ -44,7 +44,8 @@ clip-path: polygon(
 
 }
 .main{
-
+display:flex
+  justify-content: space-between;
 }
 footer{
   color: grey;
