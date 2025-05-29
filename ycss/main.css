@@ -53,6 +53,7 @@ footer{
   box-sizing: border-box;
   background-color: black;
   color: white;
+	font-family: arial;
 }
 @media (max-width: 800px) {
   .flex-container {
