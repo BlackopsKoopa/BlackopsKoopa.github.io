@@ -34,7 +34,7 @@
   <br>
     <p>It's Hammer Time.</p>
     <p>Calvin's adventure is a 2D game starring, well, Calvin. Run and constantly spin through 13 different levels with 5 bosses!</p>
-    <h1>Features</h1>
+    
     </div>
   <div class="zag">
     <p>What it will include:</p>
@@ -54,19 +54,19 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="img1.jpg" style="width:100%">
+    <img src="https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/main/ca/2025-11-06_05_30_35.png?raw=true" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="img2.jpg" style="width:100%">
+    <img src="https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/main/ca/2025-11-06_05_30_35.png?raw=true" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="img3.jpg" style="width:100%">
+    <img src="https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/main/ca/2025-11-06_05_30_35.png?raw=true" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
 
@@ -144,8 +144,15 @@
     color: white;
   font-size: 26px;
   font-family: papermario;
-
+  height: auto;
   }
+  @media screen and (max-width: 700px) {
+    img{
+      width: 50%;
+    }
+    
+  }
+  
   button {
   background-color: transparent;
   border: solid;
@@ -256,5 +263,35 @@
 }
 
   </style>
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
 </html>
 
