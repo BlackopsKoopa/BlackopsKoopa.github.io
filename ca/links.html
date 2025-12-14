@@ -1,0 +1,91 @@
+<!-- good luck... koopa-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvin's Adventure</title>
+    <link rel="icon" type="image/x-icon" href="https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/main/ca/icon.png?raw=true">
+    <meta property="og:title" content="Calvin's Adventure" />
+    <meta property="og:url" content="https://blackopskoopa.github.io/ca/index.html" />
+    <meta property="og:image" content="https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/main/ca/calvin's%20adventure%20logo.png?raw=true" />
+    <meta property="og:description" content="It's Hammer Time."/>
+    <link href="site.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="nav">
+      <button onclick="window.location.href='index.html'">HOME</button>
+      <button onclick="window.location.href='characters.html'">CHARACTERS</button>
+      <button onclick="window.location.href='videos.html'">VIDEOS</button>
+      <button onclick="window.location.href='links.html'">LINKS</button>
+      <button onclick="window.location.href='bonus.html'">BONUS</button>
+    </div>
+
+<div class="top">
+  <div class="logo">
+    <br>
+    <div class="contain">
+    <h1>Links</h1>
+    <p>Discord: https://discord.gg/tCuuqzCH2C</p>
+    <p>SMBX Forums: https://www.smbxgame.com/forums/viewtopic.php?t=30519</p>
+    </div>
+    <br><br><br><br><br><br><br>
+  <br>
+    <br>
+  </div>
+  
+</div>
+<div class="main">
+ 
+    
+    </div>
+  <div class="zag">
+   
+</div>
+
+  </div>
+    
+
+
+    <footer>This is not endorced nor affiliated by Nintendo.
+      <br><br><br>
+    </footer>
+  </body>
+
+
+
+
+
+
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+</html>
+
