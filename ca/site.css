@@ -1,0 +1,174 @@
+body{
+    font-family: arial;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color:lightgray;
+  }
+ 
+  .top{
+   
+    background-image: url('https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/main/ca/character%20checkerbg.png?raw=true');
+    
+    margin: 0;
+    padding: 0;
+   
+  }
+  .main{
+    background: #1aff00;
+    background: linear-gradient(180deg,rgba(26, 255, 0, 1) 0%, rgba(15, 148, 0, 1) 100%);
+    margin: 0;
+    padding: 0;
+    font-family: papermario;
+  }
+  .zag{
+    color:white;
+    background-color:#3b3b3b;
+    margin: 0;
+    padding: 0;
+  }
+  .contain{
+    background-color: #3b3b3b;
+    margin: 50px;
+    border:solid;
+    border-color: black;
+    border-radius: 30px;
+  }
+  footer{
+  margin: 30px;
+    padding-top:20px;
+    background-color:lightgray;
+  }
+  .nav{
+    padding-top:30px;
+    background: #1aff00;
+    background: linear-gradient(90deg,rgba(26, 255, 0, 1) 0%, rgba(143, 31, 255, 1) 100%);
+    font-size: 20px;
+    padding-bottom:20px;
+    background-size:cover;
+    margin: -20px;
+    color: white;
+  
+  }
+  .logo{
+    backdrop-filter: blur(2px);
+    color: white;
+  font-size: 26px;
+  font-family: papermario;
+  height: auto;
+  }
+  @media screen and (max-width: 700px) {
+    img{
+      width: 50%;
+    }
+    
+  }
+  
+  button {
+  background-color: transparent;
+  border: solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: papermario;
+
+}
+  button:hover{
+  color:yellow;
+    background-color:transparent;
+  }
+
+  @font-face {
+                font-family: papermario;
+                src: url('https://blackopskoopa.neocities.org/fonts/srb2-fill.ttf');
+            }
+            * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
