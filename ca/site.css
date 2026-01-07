@@ -46,7 +46,8 @@ body{
     font-size: 20px;
     padding-bottom:20px;
     background-size:cover;
-    margin: -20px;
+    margin-bottom: -20px;
+    margin-top: -20px;
     color: white;
   
   }
