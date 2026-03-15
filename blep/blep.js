@@ -917,14 +917,14 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "36";
+	app.meta.h["build"] = "41";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "blep";
 	app.meta.h["name"] = "blep";
 	app.meta.h["packageName"] = "com.example.myapp";
 	app.meta.h["version"] = "0.0.1";
 	var attributes = { allowHighDPI : true, alwaysOnTop : false, borderless : false, element : null, frameRate : 60, height : 300, hidden : false, maximized : false, minimized : false, parameters : { }, resizable : true, title : "blep", width : 300, x : null, y : null};
-	attributes.context = { antialiasing : 0, background : 0, colorDepth : 32, depth : true, hardware : true, stencil : true, type : null, vsync : false};
+	attributes.context = { antialiasing : 0, background : null, colorDepth : 32, depth : true, hardware : true, stencil : true, type : null, vsync : false};
 	if(app.__window == null) {
 		if(config != null) {
 			var _g = 0;
@@ -5016,6 +5016,7 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	,blepsound: null
 	,create: function() {
 		flixel_FlxState.prototype.create.call(this);
+		flixel_FlxG.camera.bgColor = 0;
 		this.blepy.loadGraphic("assets/images/calvin.png");
 		var _this = this.blepy;
 		if(17 == 1 || 17 == 17) {
@@ -5025,7 +5026,7 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			_this.set_y((flixel_FlxG.height - _this.get_height()) / 2);
 		}
 		this.add(this.blepy);
-		haxe_Log.trace("THE SOUNDQPDHEIFHEWPDKSDLMNFRG",{ fileName : "source/PlayState.hx", lineNumber : 21, className : "PlayState", methodName : "create"});
+		haxe_Log.trace("THE SOUNDQPDHEIFHEWPDKSDLMNFRG",{ fileName : "source/PlayState.hx", lineNumber : 24, className : "PlayState", methodName : "create"});
 		flixel_FlxG.sound.load("assets/sounds/blep.mp3");
 	}
 	,update: function(elapsed) {
@@ -5033,10 +5034,10 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		var a = this.blepy.scale.y;
 		this.blepy.scale.set_y(a + 5 * flixel_FlxG.elapsed * (1 - a));
 		if(flixel_FlxG.mouse._leftButton.current == 2) {
-			haxe_Log.trace("ribbit :3",{ fileName : "source/PlayState.hx", lineNumber : 34, className : "PlayState", methodName : "update"});
+			haxe_Log.trace("ribbit :3",{ fileName : "source/PlayState.hx", lineNumber : 37, className : "PlayState", methodName : "update"});
 			this.blepy.scale.set_y(0);
 			flixel_FlxG.sound.play("assets/sounds/blep.mp3");
-			haxe_Log.trace("but did the sound workkkk",{ fileName : "source/PlayState.hx", lineNumber : 38, className : "PlayState", methodName : "update"});
+			haxe_Log.trace("but did the sound workkkk",{ fileName : "source/PlayState.hx", lineNumber : 41, className : "PlayState", methodName : "update"});
 		}
 	}
 	,__class__: PlayState
@@ -86118,7 +86119,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 157919;
+	this.version = 338206;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";
