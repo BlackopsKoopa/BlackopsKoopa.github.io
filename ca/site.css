@@ -8,7 +8,7 @@ body{
  
   .top{
    
-    background-image: url('https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/main/ca/character%20checkerbg.png?raw=true');
+    background-image: url('bagrid.png');
     
     margin: 0;
     padding: 0;
@@ -22,10 +22,17 @@ body{
     font-family: papermario;
   }
   .zag{
+    
     color:white;
-    background-color:#3b3b3b;
+    background: #22c32f;
+    background: linear-gradient(0deg, rgba(34, 195, 47, 1) 0%, rgba(61, 61, 61, 1) 100%);
     margin: 0;
     padding: 0;
+     padding-top:30px;
+     padding-bottom:30px;
+  }
+  a{
+    color:yellow
   }
   .contain{
     background-color: #3b3b3b;
@@ -41,10 +48,10 @@ body{
   }
   .nav{
     padding-top:30px;
-    background: #1aff00;
-    background: linear-gradient(90deg,rgba(26, 255, 0, 1) 0%, rgba(143, 31, 255, 1) 100%);
+    background: #22c32f;
+    background: linear-gradient(0deg, rgba(34, 195, 47, 1) 0%, rgba(61, 61, 61, 1) 100%);
     font-size: 20px;
-    padding-bottom:20px;
+    padding-bottom:30px;
     background-size:cover;
     margin-bottom: -20px;
     margin-top: -20px;
@@ -55,7 +62,7 @@ body{
     backdrop-filter: blur(2px);
     color: white;
   font-size: 26px;
-  font-family: papermario;
+  font-family: arial;
   height: auto;
   }
   @media screen and (max-width: 700px) {
@@ -64,7 +71,19 @@ body{
     }
     
   }
-  
+  .smallimage img{
+    height: 50%;
+    max-width: 30%;
+  }
+  h1{
+    font-family: papermario;
+  }
+  h2{
+    font-family: papermario;
+  }
+  h3{
+    font-family: papermario;
+  }
   button {
   background-color: transparent;
   border: solid;
@@ -84,7 +103,7 @@ body{
 
   @font-face {
                 font-family: papermario;
-                src: url('https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/raw/refs/heads/main/ca/popjoy.otf');
+                src: url('mariofont.otf');
             }
             * {box-sizing:border-box}
 

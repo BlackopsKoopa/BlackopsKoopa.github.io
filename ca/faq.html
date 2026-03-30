@@ -1,0 +1,115 @@
+<!-- good luck... koopa-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Calvin & The Chaotic Disaster</title>
+    <link rel="icon" type="image/x-icon" href="https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/main/ca/icon.png?raw=true">
+    <meta property="og:title" content="Calvin's Adventure" />
+    <meta property="og:url" content="https://blackopskoopa.github.io/ca/index.html" />
+    <meta property="og:image" content="https://github.com/BlackopsKoopa/BlackopsKoopa.github.io/blob/main/ca/calvin's%20adventure%20logo.png?raw=true" />
+    <meta property="og:description" content="It's Hammer Time."/>
+    
+    <link href="site.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://blackopskoopa.neocities.org/new/lightbox.css" rel="stylesheet" />
+    <script src="https://blackopskoopa.neocities.org/new/lightbox.js"></script>
+  </head>
+  <body>
+    <div class="nav">
+     <button onclick="window.location.href='index.html'">HOME</button>
+      <button onclick="window.location.href='download.html'">DOWNLOADS</button>
+      <button onclick="window.location.href='characters.html'">CHARACTERS</button>
+      <button onclick="window.location.href='videos.html'">VIDEOS</button>
+      <button onclick="window.location.href='https://discord.gg/tCuuqzCH2C'">DISCORD</button>
+      <button onclick="window.location.href='faq.html'">FAQ</button>
+      <button onclick="window.location.href='devlogs.html'">DEV LOGS</button>
+      <button onclick="window.location.href='links.html'">LINKS</button>
+      <button onclick="window.location.href='bonus.html'">BONUS</button>
+    </div>
+
+<div class="top">
+  <div class="logo">
+    <br>
+    <!--<img width=1006 height=305.5 src="logo.png">-->
+    <h1><p>FAQ.</p></h1>
+  <p>Here's the FAQ totally not making this to automatically answer a few questions.</p>
+  <!--<img src="calvin.png">-->
+  <br>
+    <br>
+  </div>
+  
+</div>
+
+  <div class="zag">
+    <h1>WHO ARE CALVIN AND CLYDE?!</h1>
+    <p>Short answer: My two Mario OCs. Long answer: my two Mario OCs. More detailed descriptions on them <a href="https://blackopskoopa.neocities.org">are in my real main website on neocities.</a></p>
+
+    <h1>Why are you making this?</h1>
+    <p>I had originally made this using the Super Mario Bros X2 engine because funny. Development was way different back then lol. Now i have moved to GameMaker thanks to some annoying limitations with SMBX2. Now, i have more actual reasons making this including:</p>
+    <ul>
+      <li>Getting familiar with GameMaker because i wanna get in the indie game industry. (this is my main reason.)</li>
+      <li>Adding more lore to Calvin and Clyde lol.</li>
+      <li>Some attempt at getting better at my crappy self taught music skills.</li>
+      <li>Getting better at art? i mean i kinda don't wanna try to be as accurate as Nintendo's artists but in this present day economy its either your really accurate or your art is mediocre.</li>                                                                                         </li>
+    </ul>
+    <h1>Android port when?</h1>
+    <p>Never. if you wanna do it, then you're gonna have to make one yourself using the game's source code when i do release it.</p>
+    <h1>Web port when?</h1>
+    <p>I will do it for Unfinished Early Builds. the real finished full builds won't have a web port release.</p>
+    <h1>When will the full game release??</h1>
+    <p>When it's ready to be put out of the oven. This is all literally being done by me...</p>
+    <h1>Will there be any other languages other than english?</h1>
+    <p>No.</p>
+ 
+  </div>
+    
+
+
+    <footer><p>Calvin & The Chaotic Disaster is not endorced or affiliated by Nintendo. All trademarks are the property of their respective owners.</p>
+      <p><a href=" https://www.youtube.com/channel/UCzkcza_W50LLO4EYobAKqnQ">Youtube</a></p>
+    <p><a href="https://discord.gg/tCuuqzCH2C'">Discord</a></p>
+    
+    </footer>
+  </body>
+
+
+
+
+
+
+ 
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+</html>
+
+
+
